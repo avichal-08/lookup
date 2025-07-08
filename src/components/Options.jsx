@@ -7,7 +7,7 @@ import { MdOutlineNotifications } from "react-icons/md";
 import { MdOutlineVideoCall } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { IoSettingsOutline } from "react-icons/io5";
-import {BrowserRouter,Route,Routes,useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 export function Options(){
     const navigate=useNavigate();
     return(

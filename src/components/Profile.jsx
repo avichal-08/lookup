@@ -1,5 +1,5 @@
 import avi from "../assets/avi.png";
-import React,{ lazy} from 'react';
+import React from 'react';
 const Hcontent = React.lazy(()=>import("./Hcontent"));
 import { Outlet } from "react-router-dom";
 export function Profile(){
