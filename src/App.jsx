@@ -11,7 +11,7 @@ function App() {
     <div className='flex'>
       <Sidebar/>
       <Routes>
-        <Route path="/*" element ={<Home/>}/>
+        <Route path="/" element ={<Home/>}/>
         <Route path="/profile/*" element ={<Layout/>}>
         <Route index element={<Posts head={"Posts Section"}/>}/>
         <Route path="likesyou" element={<Posts head={"Likes You Section"}/>}/>
