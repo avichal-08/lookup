@@ -43,7 +43,7 @@ export function Profile(){
   </div>
   <Hcontent/>
   <Routes>
-    <Route path="posts" element={<Posts head={"Posts Section"}/>}/>
+    <Route path="/" element={<Posts head={"Posts Section"}/>}/>
     <Route path="likesyou" element={<Posts head={"Likes You Section"}/>}/>
     <Route path="matches" element={<Posts head={"Matches Section"}/>}/>
     <Route path="dates" element={<Posts head={"Dates Section"}/>}/>
