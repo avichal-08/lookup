@@ -1,8 +1,7 @@
 import avi from "../assets/avi.png";
 import React,{ lazy} from 'react';
 const Hcontent = React.lazy(()=>import("./Hcontent"));
-const Posts = React.lazy(()=>import("./Posts"));
-import { BrowserRouter,Route,Routes,useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 export function Profile(){
     return(
       <div className="bg-[#F5F6FA] h-200 relative w-full ">
@@ -42,12 +41,7 @@ export function Profile(){
   </div>
   </div>
   <Hcontent/>
-  <Routes>
-    <Route path="/" element={<Posts head={"Posts Section"}/>}/>
-    <Route path="likesyou" element={<Posts head={"Likes You Section"}/>}/>
-    <Route path="matches" element={<Posts head={"Matches Section"}/>}/>
-    <Route path="dates" element={<Posts head={"Dates Section"}/>}/>
-  </Routes>
+  <Outlet/>
 </div>
     )
 }
