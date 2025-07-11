@@ -7,10 +7,8 @@ import { MdOutlineNotifications } from "react-icons/md";
 import { MdOutlineVideoCall } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { IoSettingsOutline } from "react-icons/io5";
-import {useNavigate} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 export function Options(){
-    const navigate=useNavigate();
     return(
         <nav className="mt-6 ml-2 h-full">
             <NavLink to="/" className={({isActive})=>`flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-9 pl-6 mr-2 rounded`}><div className=" mt-1 mr-2"><GoHome size={30} /></div><div className=" ml-2 text-[25px] font-serif">Home</div></NavLink>
@@ -21,7 +19,7 @@ export function Options(){
             <div className="flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-6 pl-6 mr-2 rounded"><div className=" mt-1 mr-2"><TbMessage2Heart size={30} /></div><div className="ml-2 text-[25px] font-serif">Messages</div></div>
             <div className="flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-5 pl-5 mr-2 rounded"><div className=" mt-1 mr-2"><MdOutlineNotifications size={30} /></div><div className="ml-2 text-[25px] font-serif">Notifications</div></div>
             <NavLink to="/profile" className={({isActive})=>`flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-5 pl-6 mr-2 rounded`}><div className=" mt-1 mr-2"><CgProfile  size={30} /></div><div className="ml-2 text-[25px] font-serif">Profile</div></NavLink>
-            <div className="flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-6 pl-6 mr-2 rounded"><div className=" mt-1 mr-2"><IoSettingsOutline  size={30} /></div><div className="ml-2 text-[25px] font-serif">Settings</div></div>
+            <NavLink to="/settings" className={({isActive})=>`flex cursor-pointer hover:bg-[#56CCF2] ${isActive?'bg-[#56CCF2]':''} mt-5 pl-6 mr-2 rounded`}><div className=" mt-1 mr-2"><IoSettingsOutline  size={30} /></div><div className="ml-2 text-[25px] font-serif">Settings</div></NavLink>
         </nav>
     )
 }

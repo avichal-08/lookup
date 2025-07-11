@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Sidebar } from './Sidebar'
+import { Sidebar } from './SBcontainer/Sidebar'
 export default function Weblayout(){
     return(
         <div className="flex">
